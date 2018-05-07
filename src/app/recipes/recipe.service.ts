@@ -22,6 +22,10 @@ export class RecipeService {
       [new Ingredient('Mneso', 1), new Ingredient('BBQ sauce', 1)])
   ];
 
+  getRecipe(index: number) {
+    return this.recipes[index];
+  }
+
   getRecipes() {
     return this.recipes.slice();
   }
